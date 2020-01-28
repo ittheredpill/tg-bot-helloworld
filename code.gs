@@ -6,7 +6,7 @@ var sheet =  doc[0];
 function doPost(e) {
   var update = JSON.parse(e.postData.contents);
   var chatId = update.message.chat.id;
-  var text = sheet.getRange(2, 2).getValue();
+  var text = sheet.getRange(1, 1).getValue();
   
   var payload = {
     'method': 'sendMessage',
